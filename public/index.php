@@ -9,7 +9,7 @@ $app->get('/hello/{name}', function ($request, $response, $args) {
 });
 
 $app->get('/', function ($request, $response, $args) {
-	$response = $response->withHeader('Content-Type', 'application/json; charset=UTF-8');
+    $response = $response->withHeader('Content-Type', 'application/json; charset=UTF-8');
     return $response->withStatus(200)->write('{"message":"It\'s working"}');
 });
 
